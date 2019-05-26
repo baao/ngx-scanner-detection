@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --ssl --ssl-key /Users/michael/dev/programs/ebest/ebestfront/localhost.key  --ssl-cert /Users/michael/dev/programs/ebest/ebestfront/localhost.crt",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
