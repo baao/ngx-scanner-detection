@@ -3,6 +3,19 @@
 Detects barcode scanning on document, validates it and emits the scanned barcode.
 For Angular 7+ (should work with former versions too)
 
+### Installation
+
+``npm install ngx-scanner-detection``
+
+
+### app.module
+
+``` 
+import {ScannerDetectionModule} from 'ngx-scanner-detection';
+```
+
+And add ``ScannerDetectionModule`` to imports
+
 
 ### Config
 
