@@ -130,6 +130,41 @@
           }
         }
       }
+    },
+    "ngxScannerDetection": {
+      "root": "projects/ngx-scanner-detection",
+      "sourceRoot": "projects/ngx-scanner-detection/src",
+      "projectType": "library",
+      "prefix": "ngx-sw",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-scanner-detection/tsconfig.lib.json",
+            "project": "projects/ngx-scanner-detection/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-scanner-detection/src/test.ts",
+            "tsConfig": "projects/ngx-scanner-detection/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-scanner-detection/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-scanner-detection/tsconfig.lib.json",
+              "projects/ngx-scanner-detection/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "scanner-detection"

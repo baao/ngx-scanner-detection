@@ -1,0 +1,14 @@
+{
+  "name": "ngx-scanner-detection",
+  "version": "0.0.1",
+  "author": "Michael",
+  "email": "info@ospackages.net",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baao/scanner-detection"
+  },
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  }
+}

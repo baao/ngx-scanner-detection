@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-scanner-detection": [
+        "dist/ngx-scanner-detection"
+      ],
+      "ngx-scanner-detection/*": [
+        "dist/ngx-scanner-detection/*"
+      ]
+    }
   }
 }
