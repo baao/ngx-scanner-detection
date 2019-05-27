@@ -16,7 +16,7 @@ export class ScannerDetectionComponent implements OnInit {
     minLength: 7,
     maxLength: 14,
     scannerStartsWith: '',
-    scannerEndsWith: 'Enter',
+    scannerEndsWith: '',
     scanTimeout: 100,
     allowNotNumber: false,
     replaceNotNumber: true,
@@ -41,7 +41,7 @@ export class ScannerDetectionComponent implements OnInit {
         const replace: RegExp =
           this._config.replaceNotNumber ?
             new RegExp(`\\D${this._config.scannerStartsWith.length ? '\|' + this._config.scannerStartsWith : ''}${this._config.scannerEndsWith.length ? '\|' + this._config.scannerEndsWith : ''}`, 'g') :
-            new RegExp(`${this._config.scannerStartsWith}${this._config.scannerEndsWith.length ? '\\|' + this._config.scannerEndsWith : ''}`, 'g');
+            new RegExp(`${this._config.scannerStartsWith}${this._config.scannerEndsWith.length ? '\|' + this._config.scannerEndsWith : ''}`, 'g');
 
         const barcode = this._input.replace(replace, ''),
           length = barcode.length,
