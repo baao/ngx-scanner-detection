@@ -53,7 +53,7 @@ export class ScannerDetectionComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-
+    this.checkRegex = new RegExp(`^${this._config.scannerStartsWith}${this._config.allowNotNumber ? '.' : '\\d'}{${this._config.minLength},${this._config.maxLength}}${this._config.scannerEndsWith}$`);
   }
 
 }
